@@ -5,10 +5,10 @@
 <script type="text/javascript">
 
 function changeColor(newColor)
-{
- var elem = document.getElementById("paragraf");
- elem.style.color = newColor;
-}
+      {
+       var elem = document.getElementById("paragraf");
+       elem.style.color = newColor;
+      }
 </script>
 </head>
 
