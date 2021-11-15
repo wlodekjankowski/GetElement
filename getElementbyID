@@ -6,15 +6,17 @@
 
 function changeColor(newColor)
 {
- var elem = document.getElementById("para1");
+ var elem = document.getElementById("paragraf");
  elem.style.color = newColor;
 }
 </script>
 </head>
 
 <body>
-<p id="para1"><h1>Jakiś tekst</h1></p>
+<p id="paragraf">Jakiś tekst w elemencie o id=paragraf</p>
+
 <button onclick="changeColor('blue');">niebieski</button>
 <button onclick="changeColor('red');">czerwony</button>
+
 </body>
 </html>
