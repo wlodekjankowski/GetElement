@@ -1,31 +1,37 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style>
-div {
-  border: 1px solid black;
-  margin: 5px;
-}
-</style>
-</head>
-<body>
+  <head>
+    <style>
+      div {
+        border: 1px solid black;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color">
+      <p>element P in klasie color index 0.</p>
+    </div>
+    <div class="color">
+      <p>element P in klasie color index 1.</p>
+    </div>
+    <div class="color">
+      <p>element P in klasie color index 2.</p>
+    </div>
+    <div class="color">
+      <p>element P in klasie color index 3.</p>
+    </div>
 
-<div class="color">
-  <p>P element in first div with class="example color". Div's index is 0.</p>
-</div>
+    <button onclick="myFunction()">Try it</button>
 
-
-
-
-<button onclick="myFunction()">Try it</button>
-
-
-<script>
-function myFunction() {
-  var x = document.getElementsByClassName("color");
-  x[0].style.backgroundColor = "red";
-}
-</script>
-
-</body>
+    <script>
+      function myFunction() {
+        var x = document.getElementsByClassName("color");
+        var i;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.backgroundColor = "red";
+        }
+      }
+    </script>
+  </body>
 </html>
